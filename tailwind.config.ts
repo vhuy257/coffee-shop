@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        calibri: ['var(--font-calibri)'],
+        oswald: ['var(--font-oswald)'],
+        sueEllen: ['var(--font-sue-ellen)']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
