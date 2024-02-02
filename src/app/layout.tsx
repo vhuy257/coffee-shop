@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 
 import "./globals.scss";
 import SmoothScrolling from "@/components/SmoothScrolling/SmoothScrolling";
+import Footer from "@/components/footer/Footer";
 
 const oswald = Oswald({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
         <SmoothScrolling>
         <Header />
         {children}
+        <Footer />
         </SmoothScrolling>
       </body>
     </html>

@@ -1,9 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules';
+import { MdOutlineStarPurple500 } from "react-icons/md";
+
+import 'swiper/css';
 
 const Testimonial = () => {
     return (
-        <div className="wg-testimonial style-1">
+        <div className="wg-testimonial style-1 py-20">
                 <Image className="item-3" src="/coffee-shop/item-8.png" alt="" width={395} height={268}/>
                 <div className="cup-coffee">
                     <Image src="/coffee-shop/item-3.png" alt="" width={256} height={257}/>
@@ -22,8 +27,86 @@ const Testimonial = () => {
                     </div>
                 </div>
                 <div className="themesflat-container w1550">
-                    <div className="w-full flex">       
-                                             
+                    <div className="w-full flex mt-20">       
+                    <Swiper
+                        modules={[Pagination]}
+                        effect="fade"
+                        spaceBetween={50}
+                        slidesPerView={3}                        
+                        autoplay={false}                         
+                        speed={1000}              
+                        loop={true}
+                        grabCursor={true}        
+                    >
+                        <SwiperSlide className=''>                 
+                            <div className="wg-testimonial-item text-center flex flex-col items-center" data-wow-delay="0.1s">
+                                <div className="rating flex text-yellow-600">
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                </div>
+                                <p>“ So today I contacted the lovely Shaun of Arden this morning. We needed our machine looking at and we also needed some more coffee beans. I was in no way expecting to see Shaun turn up this afternoon to look at the machine! ”</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                                    <image data-name="" width="15" height="14" xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAA6klEQVQokYWTvRGDMAyFHxwLkBFYgdodjBBKlzBCUlC6SEZISspkhKSjDSt4Ba+QEyfdGZ8NanxI/qynHzIc2DyNFYASgFPaWP92FJ6nkS73AC4Mir2VNp18FBGwAfAAUEXe3fg2mRn87BTSshqrtBkyD6wB/HbAK583Pk++7NcBSM3y71Q5Z+0TNVqW6iKPW8ncR8A7dZdlNkFsUdq4gsdSewHK0rEv1YMneFRlECDwnFAjWVc4562RzaHGkMQUKKpWk5oHhpadORPY+isaLgmBYXPIvpQg3O1wPakW+RHW+sintKGubw3AH0hmQnn/bYKgAAAAAElFTkSuQmCC"></image>
+                                </svg>
+                                <div className="name"><a href="#">Ron T - Leicester</a></div>
+                            </div>               
+                        </SwiperSlide>
+
+                        <SwiperSlide className=''>                 
+                            <div className="wg-testimonial-item text-center flex flex-col items-center" data-wow-delay="0.1s">
+                                <div className="rating flex text-yellow-600">
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                </div>
+                                <p>“ So today I contacted the lovely Shaun of Arden this morning. We needed our machine looking at and we also needed some more coffee beans. I was in no way expecting to see Shaun turn up this afternoon to look at the machine! ”</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                                    <image data-name="" width="15" height="14" xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAA6klEQVQokYWTvRGDMAyFHxwLkBFYgdodjBBKlzBCUlC6SEZISspkhKSjDSt4Ba+QEyfdGZ8NanxI/qynHzIc2DyNFYASgFPaWP92FJ6nkS73AC4Mir2VNp18FBGwAfAAUEXe3fg2mRn87BTSshqrtBkyD6wB/HbAK583Pk++7NcBSM3y71Q5Z+0TNVqW6iKPW8ncR8A7dZdlNkFsUdq4gsdSewHK0rEv1YMneFRlECDwnFAjWVc4562RzaHGkMQUKKpWk5oHhpadORPY+isaLgmBYXPIvpQg3O1wPakW+RHW+sintKGubw3AH0hmQnn/bYKgAAAAAElFTkSuQmCC"></image>
+                                </svg>
+                                <div className="name"><a href="#">Ron T - Leicester</a></div>
+                            </div>               
+                        </SwiperSlide>
+
+                        <SwiperSlide className=''>                 
+                            <div className="wg-testimonial-item text-center flex flex-col items-center" data-wow-delay="0.1s">
+                                <div className="rating flex text-yellow-600">
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                </div>
+                                <p>“ So today I contacted the lovely Shaun of Arden this morning. We needed our machine looking at and we also needed some more coffee beans. I was in no way expecting to see Shaun turn up this afternoon to look at the machine! ”</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                                    <image data-name="" width="15" height="14" xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAA6klEQVQokYWTvRGDMAyFHxwLkBFYgdodjBBKlzBCUlC6SEZISspkhKSjDSt4Ba+QEyfdGZ8NanxI/qynHzIc2DyNFYASgFPaWP92FJ6nkS73AC4Mir2VNp18FBGwAfAAUEXe3fg2mRn87BTSshqrtBkyD6wB/HbAK583Pk++7NcBSM3y71Q5Z+0TNVqW6iKPW8ncR8A7dZdlNkFsUdq4gsdSewHK0rEv1YMneFRlECDwnFAjWVc4562RzaHGkMQUKKpWk5oHhpadORPY+isaLgmBYXPIvpQg3O1wPakW+RHW+sintKGubw3AH0hmQnn/bYKgAAAAAElFTkSuQmCC"></image>
+                                </svg>
+                                <div className="name"><a href="#">Ron T - Leicester</a></div>
+                            </div>               
+                        </SwiperSlide>
+
+                        <SwiperSlide className=''>                 
+                            <div className="wg-testimonial-item text-center flex flex-col items-center" data-wow-delay="0.1s">
+                                <div className="rating flex text-yellow-600">
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                    <MdOutlineStarPurple500 />
+                                </div>
+                                <p>“ So today I contacted the lovely Shaun of Arden this morning. We needed our machine looking at and we also needed some more coffee beans. I was in no way expecting to see Shaun turn up this afternoon to look at the machine! ”</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="15" height="14" viewBox="0 0 15 14">
+                                    <image data-name="" width="15" height="14" xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAA6klEQVQokYWTvRGDMAyFHxwLkBFYgdodjBBKlzBCUlC6SEZISspkhKSjDSt4Ba+QEyfdGZ8NanxI/qynHzIc2DyNFYASgFPaWP92FJ6nkS73AC4Mir2VNp18FBGwAfAAUEXe3fg2mRn87BTSshqrtBkyD6wB/HbAK583Pk++7NcBSM3y71Q5Z+0TNVqW6iKPW8ncR8A7dZdlNkFsUdq4gsdSewHK0rEv1YMneFRlECDwnFAjWVc4562RzaHGkMQUKKpWk5oHhpadORPY+isaLgmBYXPIvpQg3O1wPakW+RHW+sintKGubw3AH0hmQnn/bYKgAAAAAElFTkSuQmCC"></image>
+                                </svg>
+                                <div className="name"><a href="#">Ron T - Leicester</a></div>
+                            </div>               
+                        </SwiperSlide>
+                        
+                    </Swiper>                               
                     </div>
                 </div>
             </div>

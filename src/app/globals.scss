@@ -351,6 +351,10 @@ body {
 	padding-left: 15px;
 	width: 1200px;
 	max-width: 100%;
+
+  &.full {
+    width: 100%;
+  }
 }
 
 .breadcrumbs {
@@ -425,7 +429,7 @@ body {
 
 .mobile-nav-wrap {
   .overlay-mobile-nav {
-    cursor: url('/close.svg'),auto;
+    cursor: url('/coffee-shop/close.svg'),auto;
     content: '';
     position: fixed;
     left: 0;
@@ -466,6 +470,7 @@ body {
   }
 
   &.style-1 {
+    padding-bottom: 116px;
     &.type-1 {
       padding-top: 125px;
       padding-bottom: 54px;
@@ -590,7 +595,6 @@ body {
   &.style-1 {
     margin-top: 95px;
     padding-top: 138px;
-    padding-bottom: 147px;
   }
 
   &::before {
@@ -615,3 +619,452 @@ body {
     background-color: rgba(200, 200, 200, 0.6);
   }
 }
+
+.wg-testimonial {
+  position: relative;
+
+  &.style-1 {
+    & > .item-3 {
+      position: absolute;
+      top: -165px;
+      left: -62px;
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.cup-coffee {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+  
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.wg-testimonial-item {
+  letter-spacing: 0.27px;
+
+  p {
+    font-family: var(--font-calibri);
+    margin-top: 27px;
+    margin-bottom: 17px;
+    line-height: 27px;
+    color: #171412;
+  }
+
+  .name {
+    color: #171412;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-top: 18px;
+  }
+}
+
+.wg-counter {
+  background-color: #2d2723;
+  position: relative;
+  padding-top: 57px;
+  padding-bottom: 64px;
+  
+  & > .item-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 715px;
+    height: 230px;
+    background-image: url('/coffee-shop/item-2.png');
+    overflow: hidden;
+  }
+
+  & .item-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 646px;
+    height: 266px;
+    background-image: url('/coffee-shop/item-1.png');
+    overflow: hidden;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -41px;
+    left: 0;
+    width: 100%;
+    height: 83px;
+    background-image: url('/coffee-shop/wave-1.png');
+  }
+
+  .counter-item {
+    text-align: center;
+    position: relative;
+
+    svg {
+      width: 67px;
+      height: 67px;
+      color: #C3A27C;
+      margin: 0 auto;
+    }
+
+    .text {
+      color: #fff;
+      font-size: 15px;
+      font-family: var(--font-calibri);
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .counter {
+      color: #fff;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 67px;
+      letter-spacing: 1px;
+      margin-top: 12px;
+      margin-bottom: 11px;
+    }
+
+    &.line-right {
+      &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: -15px;
+        width: 1px;
+        height: 144px;
+        border-right: 1px dashed #635f5c;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.wg-coffee-time {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+.wg-coffee-time {
+  .center {
+    background-color: #faf1e3;
+    padding-top: 125px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    .number-phone {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 28px;
+      
+      a {
+        color: #C3A27C;
+      }
+    }
+
+    .text {
+      color: #171412;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      
+      &.s1 {
+        margin-bottom: 15px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: url('/coffee-shop/coffee-time-1.png');
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,60%);
+    }
+
+    p {
+      color: #171412;
+      margin-bottom: 4px;
+      letter-spacing: 0.3px;
+      font-family: var(--font-calibri);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #666666;
+    }
+
+    & > a {
+      margin-top: 43px !important;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .left img {
+    height: 714px;
+  }
+}
+
+.button-style-2 {
+	width: max-content;
+	height: 50px;
+	background-color: #c3a27c;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 0 40px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.follow-instagram.style-1 {
+	padding-top: 136px;
+	padding-bottom: 156px;
+}
+
+.grid-follow-instagram {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-gap: 20px;
+	margin-bottom: 36px;
+}
+
+.follow-item {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.follow-instagram .title {
+	color: #2D2723;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.partners.style-1 {
+	padding-top: 89px;
+	padding-bottom: 74px;
+}
+
+.partners {
+	padding-left: 152px;
+	padding-right: 157px;
+	padding-top: 97px;
+	margin-top: -36px;
+	padding-bottom: 88px;
+	background-image: url('/coffee-shop/bg-service.png');
+	background-position: 0px 28px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100% 246px;
+	position: relative;
+}
+
+.auto-slide .swiper-slide {
+	width: auto;
+}
+
+.partners .swiper-slide {
+	height: 95px;
+	display: flex;
+	align-items: center;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+}
+
+.footer {
+	background-color: #2d2723;
+	padding-top: 122px;
+	position: relative;
+	overflow: hidden;
+  
+  & > .item-1 {
+    position: absolute;
+    bottom: -1px;
+    left: -8px;
+  }
+
+  & > .item-2 {
+    position: absolute;
+    top: -29px;
+    right: -9px;
+  }
+
+  .logo-footer {
+    margin-bottom: 25px;
+    margin-top: 13px;
+  }
+
+  .text {
+    font-family: var(--font-calibri);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #dedede;
+    letter-spacing: 0.3px;
+    
+    span {
+      color: #C3A27C;
+    }
+  }
+
+  .title-wg {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 61px;
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      content: '';
+      width: 73px;
+      height: 2px;
+      background-color: #C3A27C;
+      left: 1px;
+      bottom: -19px;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 85px;
+    border-top: 1px solid #4c4744;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &> svg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 52px;
+      height: 53px;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      padding: 17px;
+      background-color: #2d2723;
+    }
+  }
+
+  .widget-social {
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    gap: 17px;
+  }
+
+  .contact ul li {
+    margin-bottom: 21px;
+  }
+  
+  .email input {
+    margin-top: 20px;
+    background: #48433f;
+    color: #fff;
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    font-family: var(--font-calibri);
+    overflow: hidden;
+  }
+
+  .time ul li {
+    margin-bottom: 10px;
+  }
+
+  .newletters form label {
+    margin-top: 20px;
+    padding-left: 28px;
+    font-family: var(--font-calibri);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #dedede;
+    letter-spacing: 0.3px;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    padding: 0;
+    width: 15px;
+    height: 25px;
+    margin-right: 13px;
+    cursor: pointer;
+    vertical-align: sub;
+  }
+
+  label input[type="radio"], label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  input[type="checkbox"] {
+    display: inline;
+  }
+
+  .btn-checkbox::after {
+    content: "\ea10";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    font-size: 8px;
+    left: 3px;
+    top: -6px;
+    color: #2d2723;
+    display: none;
+  }
+
+  input:checked ~ .btn-checkbox::after {
+    display: block;
+  }
+}
+
