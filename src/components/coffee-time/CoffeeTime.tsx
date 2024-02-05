@@ -5,7 +5,7 @@ const CoffeeTime = () => {
   return (
     <div className="wg-coffee-time">
         <div className="left">
-            <Image src="coffee-shop/coffee-time.jpg" alt="" width={614} height={717}/>
+            <Image src="/coffee-shop/coffee-time.jpg" alt="" width={614} height={717}/>
         </div>
         <div className="center">
             <div className="heading-section text-center mb-35">
