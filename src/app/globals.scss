@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    
-  }
-}
-
 body {
   font-size: 1rem;
   font-weight: normal;
@@ -209,10 +199,6 @@ body {
 }
 
 #site-logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-71px,-84px);
 	width: 147px;
 	height: 147px;
 	background-color: #FAF1E3;
@@ -476,20 +462,31 @@ body {
       padding-bottom: 54px;
     
       .img-left {
-        min-width: 547px;
+        @media (min-width: 1024px) {
+          min-width: 547px;
+        }
         position: relative;
       }
     
       .content {
         margin-top: 72px;
-        margin-left: -74px;
-        margin-right: -32px;
-        padding-top: 53px;
-        padding-left: 80px;
         background-color: #FFF;
-        border-top-left-radius: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         z-index: 5;
-        
+
+        @media (min-width: 1368px) {
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0;
+          padding-top: 0;
+          padding-left: 0;
+          margin-left: -74px;
+          margin-right: -32px;
+          padding-top: 53px;
+          padding-left: 80px;
+        }
+
         ul li {
           display: flex;
           align-items: center;
@@ -506,14 +503,24 @@ body {
     
       .image-2 {
         position: absolute;
-        bottom: -54px;
-        left: -215px;
+        display: none;
+
+        @media (min-width: 1024px) {
+          display: block;
+          bottom: -10%;
+          left: -20%;
+          height: auto;
+          width: auto;
+          max-width: none;
+        }
       }
       
       .image-2, 
       .image-1 {
         border-radius: 10px;
         overflow: hidden;
+        max-width: 547px;
+        margin: 0 auto;
       }
     }
     
@@ -528,6 +535,8 @@ body {
       .image-2 {
         border-radius: 10px;
         overflow: hidden;
+        max-width: 547px;
+        margin: 0 auto;
       }
 
       .content {
@@ -753,20 +762,25 @@ body {
 }
 
 .wg-coffee-time {
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
+  .left {
+    margin: 0 auto;
+  }
 }
 
 .wg-coffee-time {
   .center {
     background-color: #faf1e3;
-    padding-top: 125px;
+    padding-top: 20px;
     padding-right: 15px;
     padding-left: 15px;
     text-align: center;
     position: relative;
     overflow: hidden;
     width: 100%;
+
+    @media (min-width: 1024px) {
+      padding-top: 125px;
+    }
 
     .number-phone {
       font-size: 35px;
@@ -843,17 +857,17 @@ body {
 	padding-bottom: 156px;
 }
 
-.grid-follow-instagram {
-	display: grid;
-	grid-template-columns: repeat(5,1fr);
-	grid-gap: 20px;
-	margin-bottom: 36px;
-}
-
 .follow-item {
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .follow-instagram .title {
@@ -872,8 +886,6 @@ body {
 }
 
 .partners {
-	padding-left: 152px;
-	padding-right: 157px;
 	padding-top: 97px;
 	margin-top: -36px;
 	padding-bottom: 88px;
@@ -1038,14 +1050,6 @@ body {
     margin-right: 13px;
     cursor: pointer;
     vertical-align: sub;
-  }
-
-  label input[type="radio"], label input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
   }
   
   input[type="checkbox"] {

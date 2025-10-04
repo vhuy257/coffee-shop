@@ -11,9 +11,8 @@ const Counter = () => {
       <div className="item-1"></div>
       <div className="item-2"></div>
       <div className="themesflat-container">
-        <div className="flex">
-          
-            <div className="w-1/4">
+        <div className="flex flex-wrap gap-y-4">
+            <div className="w-full sm:w-1/2 md:w-1/4">
                 <div className="counter-item line-right style-1 type-1">
                 <div className="icon">
                     <GiCoffeeCup />
@@ -28,7 +27,7 @@ const Counter = () => {
                 </div>
             </div>
 
-            <div className="w-1/4">
+            <div className="w-full sm:w-1/2 md:w-1/4">
                 <div className="counter-item line-right style-1 type-1">
                 <div className="icon">
                     <FaRegFaceSmile />
@@ -43,7 +42,7 @@ const Counter = () => {
                 </div>
             </div>
 
-            <div className="w-1/4">
+            <div className="w-full sm:w-1/2 md:w-1/4">
                 <div className="counter-item line-right style-1 type-1">
                 <div className="icon">
                     <SiCoffeescript />
@@ -57,7 +56,7 @@ const Counter = () => {
                 </div>
             </div>
 
-            <div className="w-1/4">
+            <div className="w-full sm:w-1/2 md:w-1/4">
                 <div className="counter-item style-1 type-1">
                 <div className="icon">
                     <TbShoppingBagCheck size={80}/>

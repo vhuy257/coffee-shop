@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const CoffeeTime = () => {
   return (
-    <div className="wg-coffee-time">
+    <div className="wg-coffee-time grid grid-cols-1 lg:grid-cols-3">
         <div className="left">
             <Image src="/coffee-shop/coffee-time.jpg" alt="" width={614} height={717}/>
         </div>
@@ -20,7 +20,7 @@ const CoffeeTime = () => {
             <p>Mon - Fri : 9.00am - 22.00pm, Holidays : Close</p>
             <a href="contact.html" className="button-style-2 m-auto">GET DIRECTIONS</a>
         </div>
-        <div className="right relative">
+        <div className="right relative w-full">
             <div id="map" className="mapboxgl-map">
                 <iframe src="https://snazzymaps.com/embed/567613" width="100%" height="714px" style={{border: "none"}}></iframe>
             </div>

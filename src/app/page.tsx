@@ -35,7 +35,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <ChooseUs />
             <ChooseUs2 />
             <Testimonial />
@@ -43,7 +42,6 @@ export default function Home() {
             <CoffeeTime />
             <Instagram />
             <Partners />
-
         </main>
     )
 }

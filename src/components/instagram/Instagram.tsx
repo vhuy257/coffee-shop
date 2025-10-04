@@ -9,7 +9,7 @@ const Instagram = () => {
         <div className="themesflat-container">
             <div className="row">
                 <div className="col-12">
-                    <div className="grid-follow-instagram">
+                    <div className="grid-follow-instagram grid grid-cols-2 md:grid-cols-5 gap-4">
                         <div className="follow-item">
                             <Image src="/coffee-shop/follow-1.jpg" alt="" width={218} height={218}/>
                             <div className="icon">
@@ -41,7 +41,7 @@ const Instagram = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="title"><Link href="#" className="flex items-center justify-center gap-2"><FaInstagram />follow us instagram</Link></div>
+                    <div className="title mt-4"><Link href="#" className="flex items-center justify-center gap-2"><FaInstagram />follow us instagram</Link></div>
                 </div>
             </div>
         </div>

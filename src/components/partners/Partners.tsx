@@ -27,7 +27,17 @@ const Partners = () => {
                         autoplay={{
                             delay: 0,
                             disableOnInteraction: false
-                        }}                   
+                        }}        
+                        breakpoints={{
+                            480: {
+                                slidesPerView: 2,
+                                spaceBetween: 50,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            }
+                        }}           
                         observer={true}
                         observeParents={true}      
                         speed={10000}              
@@ -36,8 +46,8 @@ const Partners = () => {
                         className='auto-slide'
                     >
                         {data.map((k: any, index: number) => (
-                            <SwiperSlide key={index}>                 
-                                <Link href="#">
+                            <SwiperSlide key={index} className="flex items-center justify-center">                 
+                                <Link href="#" className="flex items-center justify-center">
                                     <Image src={'/coffee-shop/' + k} alt="" width={230} height={74} className='object-cover'/>
                                 </Link>
                             </SwiperSlide>

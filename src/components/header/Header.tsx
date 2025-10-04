@@ -38,9 +38,9 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="header-inner"> 
+                    <div className="header-inner mt-10 md:mt-0"> 
                         <div className="header-inner-wrap">
-                            <div className="mobile-button">
+                            <div className="mobile-button md:hidden absolute top-0 left-0">
                                 <span></span>
                             </div>
                         
@@ -79,7 +79,7 @@ const Header = () => {
                                     </div>
                                 </div>
                             </div>
-                            <nav className="main-nav left">
+                            <nav className="hidden lg:flex left">
                                 <ul className="menu-primary-menu flex gap-10">
                                     <li className="menu-item menu-item-has-children">
                                         <a href="#">Home</a>
@@ -103,7 +103,7 @@ const Header = () => {
                                     </a>
                                 </div>
                             </div>
-                            <nav className="main-nav right">
+                            <nav className="hidden lg:flex right">
                                 <ul className="menu-primary-menu">
                                     <li className="menu-item menu-item-has-children current-menu-item">
                                         <a href="#">Pages</a>
@@ -131,7 +131,7 @@ const Header = () => {
                                 </ul>
                             </nav>
                             <div className="header-right">
-                                <div className="header-search relative">
+                                <div className="hidden lg:flex header-search relative">
                                     <Link href="#" className="show-search text-white">
                                         <FiSearch size={20}/>
                                     </Link>

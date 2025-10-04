@@ -83,7 +83,7 @@ const Footer = () => {
                                     <button className="" type="submit"><i className="icon-send"></i></button>
                                 </div>
                                 <div className="check">
-                                    <label htmlFor="check-1" className="relative">
+                                    <label htmlFor="check-1" className="relative flex items-center cursor-pointer mt-0 !pl-0">
                                         <input id="check-1" type="checkbox"/>
                                         <span className="btn-checkbox"></span>
                                         I agree to the Privacy Policy

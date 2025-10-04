@@ -8,7 +8,7 @@ const ChooseUs = () => {
             <div className="themesflat-container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="wrap flex">
+                        <div className="flex flex-col lg:flex-row wrap">
                             <div className="img-left">
                                 <div className="image-1">
                                     <Image className="w-full" src="/coffee-shop/about-4.jpg" alt="" width={547} height={581}/>

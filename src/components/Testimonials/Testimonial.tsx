@@ -30,9 +30,14 @@ const Testimonial = () => {
                     <div className="w-full flex mt-20">       
                     <Swiper
                         modules={[Pagination]}
-                        effect="fade"
-                        spaceBetween={50}
-                        slidesPerView={3}                        
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            }
+                        }}
                         autoplay={false}                         
                         speed={1000}              
                         loop={true}
@@ -105,7 +110,6 @@ const Testimonial = () => {
                                 <div className="name"><a href="#">Ron T - Leicester</a></div>
                             </div>               
                         </SwiperSlide>
-                        
                     </Swiper>                               
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const ChooseUs2 = () => {
         <div className="themesflat-container">
             <div className="row">
                 <div className="col-12">
-                    <div className="wrap flex">
+                    <div className="flex flex-col lg:flex-row wrap">
                         <div className="content">
                             <div className="heading-section mb-8">
                                 <span className="sub wow fadeInUp sub-before animated">the story of coffee</span>
@@ -20,7 +20,7 @@ const ChooseUs2 = () => {
                             <div className="image-1 wow fadeInRight animated">
                                 <Image className="w-full" src="/coffee-shop/about-6.jpg" alt="" height={550} width={547}/>
                             </div>
-                            <div className="image-2 wow fadeInRight animated">
+                            <div className="image-2 wow fadeInRight animated hidden lg:block">
                                 <Image className="w-full" src="/coffee-shop/about-7.jpg" alt="" height={550} width={547}/>
                             </div>
                         </div>
