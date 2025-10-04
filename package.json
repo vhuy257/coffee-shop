@@ -11,6 +11,7 @@
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.39",
     "aos": "^2.3.4",
+    "hamburger-react": "^2.5.2",
     "magicmouse.js": "^1.2.1",
     "next": "14.1.0",
     "react": "^18",
